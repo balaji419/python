@@ -15,4 +15,4 @@ class myclass:
 
 print("Enter the element to be searched")
 ele=int(input())
-obj1=myclass([2,3,5,6,'nyyt','k',655], ele)
+obj1=myclass([2,3,5,6,'nyyt','k',655], ele) #here the important thing is in object calling time we do pass the parameter in the constructor
