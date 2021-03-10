@@ -9,6 +9,7 @@ pipeline {
         script{
           sh "echo $access_key"
         sh "python3 get_creds.py"
+          echo "$access_key"
         }
       }
     }
