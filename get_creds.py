@@ -10,5 +10,5 @@ def main():
         session_token=stdout['Credentials'].get('SessionToken')
         access_keyid=stdout['Credentials'].get('AccessKeyId')
         return secret_key,session_token,access_keyid
-a,b,c=main()
-return a,b,c
+secret_key,token,access_key=main()
+
