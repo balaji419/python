@@ -6,7 +6,9 @@ pipeline {
   stages {
     stage('intiating') {
       steps{
+        script{
         sh "python3 get_creds.py"
+        }
       }
     }
   }
