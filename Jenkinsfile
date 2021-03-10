@@ -1,4 +1,4 @@
-def access_key=""
+def access_key="dummy"
 def secret_key=""
 def token=""
 pipeline {
@@ -7,6 +7,7 @@ pipeline {
     stage('intiating') {
       steps{
         script{
+          sh "echo $access_key"
         sh "python3 get_creds.py"
         }
       }
