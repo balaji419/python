@@ -13,7 +13,15 @@ pipeline {
 ).trim()
         //sh "python3 get_creds.py"
           echo "$result"
+          access_key=result
         }
+      }
+    }
+    stage("print_creds")
+    {
+      steps
+      {
+        echo "$access_key"
       }
     }
   }
