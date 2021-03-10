@@ -7,9 +7,12 @@ pipeline {
     stage('intiating') {
       steps{
         script{
-          sh "echo $access_key"
-        sh "python3 get_creds.py"
-          echo "$access_key"
+          result=sh (
+    script: 'python3 get_creds.py',
+    returnStdout: true
+).trim()
+        //sh "python3 get_creds.py"
+          echo "$result"
         }
       }
     }
